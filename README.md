@@ -5,7 +5,7 @@ This project uses machine learning techniques to detect fraudulent credit card t
 ## Folder Structure
 
 ```ml-creditcard-fraud-detection/```
-#```├── data/ # Dataset and any derived files```
+``├── data/ # Dataset and any derived files``
 ├── notebooks/ # Jupyter/Databricks notebooks
 │ ├── 1_data_preprocessing.ipynb
 │ ├── 2_eda.ipynb
