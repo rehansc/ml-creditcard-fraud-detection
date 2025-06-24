@@ -8,7 +8,7 @@ This project uses machine learning techniques to detect fraudulent credit card t
   Contains the original dataset and any intermediate data files.
 
 `ml-creditcard-fraud-detection/`
-`├── data/ # Dataset and any derived files`
+- `├── data/ # Dataset and any derived files`
 ├── notebooks/ # Jupyter/Databricks notebooks
 │ ├── 1_data_preprocessing.ipynb
 │ ├── 2_eda.ipynb
