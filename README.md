@@ -27,7 +27,13 @@ This project uses machine learning techniques to detect fraudulent credit card t
 ## Folder Structure
 
 - ml-creditcard-fraud-detection/
-  - data/                       <!-- Dataset and any derived files -->
+  - data/
+    -## 📊 Dataset Overview
+    - Transactions: 284,807
+    - Fraud Cases: 492 (≈ 0.17%)
+    - Features: `V1` to `V28` (anonymized via PCA), `Time`, and `Amount`
+
+The original dataset is highly imbalanced and requires special care during training. 
   - notebooks/                  <!-- Jupyter/Databricks notebooks -->
     - 1_data_preprocessing.ipynb
     - 2_eda.ipynb
