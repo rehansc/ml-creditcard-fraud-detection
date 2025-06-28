@@ -89,3 +89,13 @@ Dataset: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-
 
 ## 📁 Folder Structure
 
+ml-creditcard-fraud-detection/
+├── data/ # Dataset and derived files
+├── notebooks/ # Jupyter/Databricks notebooks
+│ ├── 1_data_preprocessing.ipynb
+│ ├── 2_eda.ipynb
+│ ├── 3_model_training.ipynb
+│ ├── 4_model_evaluation.ipynb
+├── 5_deployment_notes.md # Strategy for production deployment
+└── README.md # Project overview and summary
+
