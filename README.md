@@ -6,76 +6,6 @@ This project applies machine learning techniques to detect fraudulent credit car
 
 ## 🧠 Project Highlights
 
-
----
-
-## 📊 Dataset Overview
-
-- Transactions: 284,807
-- Fraud Cases: 492 (≈ 0.17%)
-- Features: `V1` to `V28` (anonymized via PCA), `Time`, and `Amount`
-
-The original dataset is highly imbalanced and requires special care during training.
-
----
-
-## 🔧 Techniques Used
-
-- **Data Preprocessing**
-  - Handled class imbalance using undersampling
-  - Converted raw CSV to Parquet for Spark compatibility
-- **EDA**
-  - Distribution of fraud over time
-  - Outlier detection using boxplots
-  - Feature correlation heatmap
-- **Model Training**
-  - Logistic Regression (baseline)
-  - Random Forest Classifier (best performing)
-- **Model Evaluation**
-  - ROC Curve & AUC
-  - Confusion Matrix
-  - Precision, Recall, F1
-
----
-
-## 🚀 Deployment Plan (Summary)
-
-Outlined in `5_deployment_notes.md`, including:
-
-- **Batch Scoring** via scheduled Databricks Jobs
-- **Real-Time Scoring** using MLflow model serving (REST API)
-- **BI Integration** with Power BI or Tableau via Delta tables
-- **Monitoring** for precision-recall drift over time
-
----
-
-## 🧠 Future Improvements
-
-- Integrate **SMOTE** or ensemble balancing
-- Use **Gradient-Boosted Trees (GBTClassifier)**
-- Deploy as a live MLflow REST API
-- Build a fraud alert dashboard
-
----
-
-## 📌 Author & Motivation
-
-This project is part of my hands-on ML/AI learning journey as I transition into the field professionally. I'm particularly interested in applying ML in fintech and healthcare domains.
-
-Feel free to fork, reuse, or reach out with questions!
-
-> **🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)**  
-> *(Replace with your link)*
-
----
-
-## 📎 Reproduce This Project
-
-You can run this on any Databricks workspace (Community or Pro).  
-Dataset: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-
-
-
 - ✅ Loaded, cleaned, and balanced a highly imbalanced dataset (0.17% fraud rate)
 - 📊 Performed exploratory data analysis on anonymized PCA features
 - ⚙️ Trained multiple classifiers (Logistic Regression, Random Forest)
@@ -88,20 +18,74 @@ Dataset: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-
 
 ---
 
+## 📊 Dataset Overview
+
+- **Transactions**: 284,807  
+- **Fraud Cases**: 492 (≈ 0.17%)  
+- **Features**: `V1` to `V28` (anonymized via PCA), `Time`, and `Amount`  
+- The original dataset is highly imbalanced and requires special care during training.
+
+---
+
+## 🔧 Techniques Used
+
+### Data Preprocessing
+- Handled class imbalance using **undersampling**
+- Converted raw CSV to **Parquet** for Spark compatibility
+
+### Exploratory Data Analysis (EDA)
+- Visualized fraud distribution over time
+- Detected outliers using boxplots
+- Analyzed feature correlation heatmaps
+
+### Model Training
+- Trained **Logistic Regression** (baseline)
+- Trained **Random Forest Classifier** (best performing)
+
+### Model Evaluation
+- Plotted **ROC Curve** and calculated AUC
+- Built **Confusion Matrix**
+- Calculated **Precision, Recall, F1 Score**
+
+---
+
+## 🚀 Deployment Plan (Summary)
+
+Outlined in `5_deployment_notes.md`, including:
+
+- 🗓️ Batch Scoring via scheduled Databricks Jobs
+- ⚡ Real-Time Scoring using MLflow model serving (REST API)
+- 📊 BI Integration with Power BI or Tableau via Delta tables
+- 🧪 Monitoring for precision-recall drift over time
+
+---
+
+## 🧠 Future Improvements
+
+- Integrate **SMOTE** or ensemble balancing
+- Use **Gradient-Boosted Trees (GBTClassifier)**
+- Deploy as a live **MLflow REST API**
+- Build a **fraud alert dashboard**
+
+---
+
+## 📌 Author & Motivation
+
+This project is part of my hands-on ML/AI learning journey as I transition into the field professionally. I'm particularly interested in applying ML in **fintech** and **healthcare** domains.
+
+Feel free to fork, reuse, or reach out with questions!
+
+> 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)  
+> *(Replace with your actual LinkedIn profile)*
+
+---
+
+## 📎 Reproduce This Project
+
+You can run this on any Databricks workspace (Community or Pro).  
+Dataset: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+---
+
 ## 📁 Folder Structure
 
-# Credit Card Fraud Detection (ML Project)
-
-This project uses machine learning techniques to detect fraudulent credit card transactions using the [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
-
-## Folder Structure
-
-- ml-creditcard-fraud-detection/
-  - data/
-  - notebooks/                  <!-- Jupyter/Databricks notebooks -->
-    - 1_data_preprocessing.ipynb
-    - 2_eda.ipynb
-    - 3_model_training.ipynb
-    - 4_model_evaluation.ipynb
-  - 5_deployment_notes.md      <!-- Notes on deployment options -->
-  - README.md
