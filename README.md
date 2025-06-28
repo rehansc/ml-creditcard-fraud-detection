@@ -28,7 +28,7 @@ This project uses machine learning techniques to detect fraudulent credit card t
 
 - ml-creditcard-fraud-detection/
   - data/
-    -## 📊 Dataset Overview
+    ## 📊 Dataset Overview
     - Transactions: 284,807
     - Fraud Cases: 492 (≈ 0.17%)
     - Features: `V1` to `V28` (anonymized via PCA), `Time`, and `Amount`
