@@ -75,7 +75,7 @@ This project is part of my hands-on ML/AI learning journey as I transition into 
 
 Feel free to fork, reuse, or reach out with questions!
 
-> 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)  
+> 🔗 Connect with me on [LinkedIn]([https://www.linkedin.com/in/YOUR-PROFILE](https://www.linkedin.com/in/rehanchaudhry/))  
 > *(Replace with your actual LinkedIn profile)*
 
 ---
