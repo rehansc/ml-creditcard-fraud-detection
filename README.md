@@ -99,6 +99,10 @@ Dataset: [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/datasets/mlg-
     - 5_deployment_notes.md # Strategy for production deployment
   - README.md # Project overview and summary
 
-📬 Contact
-Built by Rehan Chaudhry — exploring the intersection of ML + Markets.
+---
+
+## 📬 Contact
+
+Built by [Rehan Chaudhry](https://github.com/rehansc) — exploring the intersection of **ML + Markets**.  
 Open to feedback, forks, and collaboration!
+
